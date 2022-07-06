@@ -26,7 +26,7 @@ resetButton.addEventListener("click", function(event) {
 })
 
 // This is a normal chain of promises.  This waits for one result to occur before the other ones happen.
-animateButton.addEventListener("click", function(event) {
+/* animateButton.addEventListener("click", function(event) {
 
     return changeDivColors(div1, "rgb(179, 233, 255)", 1000)
         .then(function(result) {
@@ -44,10 +44,10 @@ animateButton.addEventListener("click", function(event) {
         })
 
 });
-
+*/
 
 // This uses the Promise.all() method.  This means each promise is being resolved at the same time.
-/*animateButton.addEventListener("click", function(event) {
+animateButton.addEventListener("click", function(event) {
 
     const promise1 = changeDivColors(div1, "rgb(179, 233, 255)", 1000);
     const promise2 = changeDivColors(div2, "rgb(255, 97, 97)", 2000);
@@ -59,7 +59,7 @@ animateButton.addEventListener("click", function(event) {
         console.log(result[2]);
     })
 
-}) */
+})
 
 
 // This one uses the async-await for the functions.  This has the same result as the chaining.  These promises are NOT fulfilled in parallel. 
